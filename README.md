@@ -7,7 +7,7 @@ This repository contains the official branding guidelines and assets for the Qua
 QuantumLayer operates as a parent brand with several specialized sub-brands:
 
 | Sub-brand | Primary Color | Accent Color | Purpose |
-|-----------|---------------|--------------|---------|
+|-----------|---------------|--------------|----------|
 | QuantumHub | #8A63D2 | #F0EFFF | Registry UI, pull/push agent |
 | QuantumDesk | #00BFA6 | #E6FCF5 | Electron/Desktop client |
 | QuantumCLI | #F29E4C | #FFF5E5 | CLI terminal tool |
