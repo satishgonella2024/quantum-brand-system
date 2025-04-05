@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Dark Background -->
+  <rect width="800" height="500" fill="#0A0E1A" />
+  
+  <!-- Header Bar -->
+  <rect width="800" height="60" fill="#13172A" />
+  
+  <!-- QuantumSDK Logo -->
+  <g transform="translate(20, 15) scale(0.3)">
+    <!-- Bottom Layer -->
+    <rect x="10" y="10" width="100" height="60" rx="12" ry="12" fill="url(#bottom-gradient)" />
+    
+    <!-- Middle Layer -->
+    <rect x="5" y="5" width="100" height="60" rx="12" ry="12" fill="url(#middle-gradient)" />
+    
+    <!-- Top Layer -->
+    <rect x="0" y="0" width="100" height="60" rx="12" ry="12" fill="url(#top-gradient)" />
+    
+    <!-- Orbital Path -->
+    <ellipse cx="50" cy="30" rx="70" ry="40" fill="none" stroke="#FF9040" stroke-width="1.5" stroke-opacity="0.6" />
+    
+    <!-- Orbital Particle -->
+    <circle cx="100" cy="30" r="8" fill="#FF9040" />
+  </g>
+  
+  <!-- QuantumSDK Text -->
+  <text x="70" y="37" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">
+    <tspan>Quantum</tspan><tspan fill="#D6336C">SDK</tspan>
+  </text>
+  
+  <!-- Documentation Title -->
+  <text x="400" y="37" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Developer Documentation</text>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="60" width="200" height="440" fill="#13172A" />
+  
+  <!-- Sidebar Menu -->
+  <rect x="10" y="100" width="180" height="40" rx="5" ry="5" fill="#D6336C" opacity="0.1" />
+  <text x="25" y="125" font-family="Inter, Arial, sans-serif" font-size="14" fill="#D6336C" font-weight="500">Getting Started</text>
+  
+  <text x="25" y="175" font-family="Inter, Arial, sans-serif" font-size="14" fill="#B3B8D0">Agent Creation</text>
+  <text x="25" y="215" font-family="Inter, Arial, sans-serif" font-size="14" fill="#B3B8D0">API Reference</text>
+  <text x="25" y="255" font-family="Inter, Arial, sans-serif" font-size="14" fill="#B3B8D0">Examples</text>
+  <text x="25" y="295" font-family="Inter, Arial, sans-serif" font-size="14" fill="#B3B8D0">Integrations</text>
+  
+  <!-- Main Content Area -->
+  <rect x="220" y="80" width="560" height="50" rx="5" ry="5" fill="#FFF0F6" />
+  <text x="240" y="110" font-family="Inter, Arial, sans-serif" font-size="14" fill="#0A0E1A" font-weight="500">Installation</text>
+  
+  <!-- Code Sample -->
+  <rect x="220" y="150" width="560" height="140" rx="5" ry="5" fill="#1A1F36" />
+  
+  <text x="240" y="175" font-family="Fira Code, monospace" font-size="14" fill="#B3B8D0"># Using pip</text>
+  <text x="240" y="200" font-family="Fira Code, monospace" font-size="14">
+    <tspan fill="#F29E4C">pip</tspan>
+    <tspan fill="#FFFFFF"> install quantum-sdk</tspan>
+  </text>
+  
+  <text x="240" y="230" font-family="Fira Code, monospace" font-size="14" fill="#B3B8D0"># Using npm</text>
+  <text x="240" y="255" font-family="Fira Code, monospace" font-size="14">
+    <tspan fill="#F29E4C">npm</tspan>
+    <tspan fill="#FFFFFF"> install @quantumlayer/sdk</tspan>
+  </text>
+  
+  <text x="220" y="320" font-family="Inter, Arial, sans-serif" font-size="18" fill="#FFFFFF" font-weight="500">Quick Start Example</text>
+  
+  <!-- Code Example -->
+  <rect x="220" y="340" width="560" height="140" rx="5" ry="5" fill="#1A1F36" />
+  
+  <text x="240" y="360" font-family="Fira Code, monospace" font-size="13">
+    <tspan fill="#D6336C">import</tspan>
+    <tspan fill="#FFFFFF"> { Agent, AgentConfig } </tspan>
+    <tspan fill="#D6336C">from</tspan>
+    <tspan fill="#00BFA6"> 'quantum-sdk'</tspan>
+  </text>
+  
+  <text x="240" y="385" font-family="Fira Code, monospace" font-size="13">
+    <tspan fill="#D6336C">const</tspan>
+    <tspan fill="#FFFFFF"> config = </tspan>
+    <tspan fill="#D6336C">new</tspan>
+    <tspan fill="#4C6EF5"> AgentConfig</tspan>
+    <tspan fill="#FFFFFF">({</tspan>
+  </text>
+  
+  <text x="260" y="410" font-family="Fira Code, monospace" font-size="13">
+    <tspan fill="#F29E4C">name</tspan>
+    <tspan fill="#FFFFFF">: </tspan>
+    <tspan fill="#00BFA6">'my-first-agent'</tspan>
+    <tspan fill="#FFFFFF">,</tspan>
+  </text>
+  
+  <text x="260" y="435" font-family="Fira Code, monospace" font-size="13">
+    <tspan fill="#F29E4C">capabilities</tspan>
+    <tspan fill="#FFFFFF">: [</tspan>
+    <tspan fill="#00BFA6">'text-processing'</tspan>
+    <tspan fill="#FFFFFF">, </tspan>
+    <tspan fill="#00BFA6">'api-integration'</tspan>
+    <tspan fill="#FFFFFF">]</tspan>
+  </text>
+  
+  <text x="240" y="460" font-family="Fira Code, monospace" font-size="13">
+    <tspan fill="#FFFFFF">});</tspan>
+  </text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="top-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CD4FF" />
+      <stop offset="100%" stop-color="#2E8BFF" />
+    </linearGradient>
+    
+    <linearGradient id="middle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A92FF" />
+      <stop offset="100%" stop-color="#5A6AFF" />
+    </linearGradient>
+    
+    <linearGradient id="bottom-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A52FF" />
+      <stop offset="100%" stop-color="#7747FF" />
+    </linearGradient>
+  </defs>
+</svg>

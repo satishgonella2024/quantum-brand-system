@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Dark Background -->
+  <rect width="800" height="500" fill="#0A0E1A" />
+  
+  <!-- Header Bar -->
+  <rect width="800" height="60" fill="#13172A" />
+  
+  <!-- QuantumD Logo -->
+  <g transform="translate(20, 15) scale(0.3)">
+    <!-- Bottom Layer -->
+    <rect x="10" y="10" width="100" height="60" rx="12" ry="12" fill="url(#bottom-gradient)" />
+    
+    <!-- Middle Layer -->
+    <rect x="5" y="5" width="100" height="60" rx="12" ry="12" fill="url(#middle-gradient)" />
+    
+    <!-- Top Layer -->
+    <rect x="0" y="0" width="100" height="60" rx="12" ry="12" fill="url(#top-gradient)" />
+    
+    <!-- Orbital Path -->
+    <ellipse cx="50" cy="30" rx="70" ry="40" fill="none" stroke="#FF9040" stroke-width="1.5" stroke-opacity="0.6" />
+    
+    <!-- Orbital Particle -->
+    <circle cx="100" cy="30" r="8" fill="#FF9040" />
+  </g>
+  
+  <!-- QuantumD Text -->
+  <text x="70" y="37" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">
+    <tspan>Quantum</tspan><tspan fill="#4C6EF5">D</tspan>
+  </text>
+  
+  <!-- API Documentation Title -->
+  <text x="400" y="37" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">API Documentation</text>
+  
+  <!-- Main Content -->
+  <rect x="50" y="80" width="700" height="400" rx="5" ry="5" fill="#13172A" />
+  
+  <!-- API Method Tabs -->
+  <rect x="70" y="100" width="80" height="30" rx="15" ry="15" fill="#4C6EF5" />
+  <text x="110" y="120" font-family="Inter, Arial, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">REST</text>
+  
+  <rect x="160" y="100" width="80" height="30" rx="15" ry="15" fill="#1A1F36" />
+  <text x="200" y="120" font-family="Inter, Arial, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">gRPC</text>
+  
+  <rect x="250" y="100" width="130" height="30" rx="15" ry="15" fill="#1A1F36" />
+  <text x="315" y="120" font-family="Inter, Arial, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">WebSockets</text>
+  
+  <!-- Endpoint Section -->
+  <text x="70" y="160" font-family="Inter, Arial, sans-serif" font-size="16" fill="#4C6EF5" font-weight="bold">Agent Management</text>
+  
+  <!-- GET Endpoint -->
+  <rect x="70" y="180" width="70" height="25" rx="3" ry="3" fill="#00BFA6" opacity="0.2" />
+  <text x="105" y="197" font-family="Fira Code, monospace" font-size="14" fill="#00BFA6" text-anchor="middle">GET</text>
+  
+  <text x="150" y="197" font-family="Fira Code, monospace" font-size="14" fill="#FFFFFF">/api/v1/agents</text>
+  <text x="150" y="220" font-family="Inter, Arial, sans-serif" font-size="13" fill="#B3B8D0">Retrieve all registered agents</text>
+  
+  <!-- POST Endpoint -->
+  <rect x="70" y="250" width="70" height="25" rx="3" ry="3" fill="#F29E4C" opacity="0.2" />
+  <text x="105" y="267" font-family="Fira Code, monospace" font-size="14" fill="#F29E4C" text-anchor="middle">POST</text>
+  
+  <text x="150" y="267" font-family="Fira Code, monospace" font-size="14" fill="#FFFFFF">/api/v1/agents</text>
+  <text x="150" y="290" font-family="Inter, Arial, sans-serif" font-size="13" fill="#B3B8D0">Register a new agent</text>
+  
+  <!-- PUT Endpoint -->
+  <rect x="70" y="320" width="70" height="25" rx="3" ry="3" fill="#8A63D2" opacity="0.2" />
+  <text x="105" y="337" font-family="Fira Code, monospace" font-size="14" fill="#8A63D2" text-anchor="middle">PUT</text>
+  
+  <text x="150" y="337" font-family="Fira Code, monospace" font-size="14" fill="#FFFFFF">/api/v1/agents/{id}</text>
+  <text x="150" y="360" font-family="Inter, Arial, sans-serif" font-size="13" fill="#B3B8D0">Update an existing agent</text>
+  
+  <!-- DELETE Endpoint -->
+  <rect x="70" y="390" width="70" height="25" rx="3" ry="3" fill="#D6336C" opacity="0.2" />
+  <text x="105" y="407" font-family="Fira Code, monospace" font-size="14" fill="#D6336C" text-anchor="middle">DEL</text>
+  
+  <text x="150" y="407" font-family="Fira Code, monospace" font-size="14" fill="#FFFFFF">/api/v1/agents/{id}</text>
+  <text x="150" y="430" font-family="Inter, Arial, sans-serif" font-size="13" fill="#B3B8D0">Remove an agent</text>
+  
+  <!-- Response Example -->
+  <rect x="400" y="180" width="320" height="235" rx="3" ry="3" fill="#1A1F36" />
+  <text x="420" y="200" font-family="Fira Code, monospace" font-size="12" fill="#B3B8D0">{
+  "data": [
+    {
+      "id": "a1b2c3d4",
+      "name": "support-agent",
+      "version": "1.2.0",
+      "status": "active",
+      "created_at": "2025-03-15T14:30:22Z",
+      "updated_at": "2025-04-01T09:12:47Z"
+    },
+    {
+      "id": "e5f6g7h8",
+      "name": "sales-assistant",
+      "version": "2.0.1",
+      "status": "inactive",
+      "created_at": "2025-02-20T10:15:33Z",
+      "updated_at": "2025-03-28T16:44:10Z"
+    }
+  ],
+  "total": 2
+}</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="top-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CD4FF" />
+      <stop offset="100%" stop-color="#2E8BFF" />
+    </linearGradient>
+    
+    <linearGradient id="middle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A92FF" />
+      <stop offset="100%" stop-color="#5A6AFF" />
+    </linearGradient>
+    
+    <linearGradient id="bottom-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A52FF" />
+      <stop offset="100%" stop-color="#7747FF" />
+    </linearGradient>
+  </defs>
+</svg>
